@@ -1,0 +1,185 @@
+body{
+  width: 1024px;
+  font-family: sans-serif;
+ 
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 1.7fr 1fr;
+  grid-template-rows: 0.4fr 2.3fr 0.3fr;
+  gap: 5px 3px;
+  grid-template-areas:
+    "Header-navbar Header-navbar Header-navbar Header-navbar"
+    "Content-1 Content-1 Content2 sidebar"
+    "footer footer footer footer";
+}
+.Header-navbar { 
+  grid-area: Header-navbar;
+  
+  border: black solid 2px;
+  background-color: rgb(230, 223, 223);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  
+  
+
+ }
+ li,a{
+   font-size: 16px;
+   color: #030303;
+   text-decoration: none;
+   
+   
+ }
+ .nav-link{
+list-style: none;
+
+
+ }
+ .nav-link li{
+   display: inline-block;
+   padding: 0px 20px;
+   border: black solid 2px;
+   border-radius: 50%;
+ }
+ .nav-link li a{
+   transition: all 0.3s ease 0s;
+ }
+ .nav-link li a:hover{
+ color: red;
+}
+.login-h2:hover{
+
+  color: red;
+ 
+}
+
+.Content-1 {
+   grid-area: Content-1;
+   border: black solid 2px;
+   text-align: center;
+   background-color: rgb(73, 73, 73);
+   }
+
+.Content2 { 
+  grid-area: Content2;
+  border: black solid 2px;
+  text-align: center;
+  background-color: rgb(136, 135, 135);
+ }
+
+.sidebar { 
+  grid-area: sidebar;
+  border: black solid 2px;
+  text-align: center;
+  background-color: lightgray;
+ }
+
+ .footer { 
+   grid-area: footer;
+   text-align: center;
+   border: black solid 2px;
+   background-color: rgb(153, 154, 172);
+   }
+   
+   /* login page*/ 
+   
+
+
+.grid-container1 {
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.6fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Navbar Navbar Navbar Navbar Navbar"
+      "Header Header Header . ."
+      "Form Form Form Form ."
+      "Footer Footer Footer Footer Footer";
+  }
+  .navbar1 {
+     grid-area: Navbar;
+     text-transform: uppercase;
+    border: black solid 2px;
+    background-color: rgb(230, 223, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+    
+    }
+    .navlink li{
+      display: inline-block;
+      padding: 0px 40px;
+      border: black solid 2px;
+      border-radius: 50%;
+    }
+    li,a{
+        font-size: 16px;
+        color: #030303;
+        text-decoration: none;}
+
+  
+    .navlink li a:hover{
+    color: red;
+    }
+    .indexpaxe{
+
+        text-align: right;
+        
+    }
+    .indexpage:hover{
+
+      
+        color: red;
+       
+      }
+      #fish{
+        width: 75px;
+        
+      }
+     
+  
+  .Header1 {
+       grid-area: Header;
+       background-color: rgb(73, 73, 73);
+       width: auto;
+       height: 100px;
+
+     }
+  
+  .Form1 {
+       grid-area: Form;
+       margin-top: 0px;
+       color: #fff;
+       text-align: center;
+       background-color: rgb(73, 73, 73);
+       min-width: 500px;
+       min-height: 500px;
+       border-radius: 0%;
+     }
+
+     .forms{
+    
+      border: red solid 2px;
+      padding: 10px;
+      border-radius: 50%;
+     }
+     .forms:hover{
+       color: royalblue;
+     }
+     
+  
+  .Footer1 {
+       grid-area: Footer;
+       text-align: center;
+       border: black solid 2px;
+       background-color: rgb(153, 154, 172);
+
+     }
+
+
+ 
